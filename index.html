@@ -1,3 +1,204 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hallmark Regina East</title>
+	<style>* {
+	  box-sizing: border-box;
+	  }
+	  body {
+	    margin: 0;
+	  }
+	  *{
+	    box-sizing:border-box;
+	  }
+	  body{
+	    margin:0;
+	  }
+	  a {
+	    color: unset;
+	    background-color: unset;
+	    text-decoration: none;
+	  }
+	  .container-width{
+	    width:90%;
+	    max-width:1150px;
+	    margin:0 auto;
+	  }
+	  .flex-sect{
+	    background-color:#fafafa;
+	    padding:100px 0;
+	    font-family:Helvetica, serif;
+	  }
+	  .flex-desc{
+	    margin-bottom:55px;
+	    font-size:1em;
+	    color:rgba(0, 0, 0, 0.5);
+	    text-align:center;
+	    padding:5px;
+	  }
+	  .cards{
+	    padding:20px 0;
+	    display:flex;
+	    justify-content:space-around;
+	    flex-flow:wrap;
+	  }
+	  .card{
+	    background-color:white;
+	    width:300px;
+	    height:250px;
+	    margin-bottom:30px;
+	    padding:50px 5px 20px 5px;
+	    text-align:center;
+	    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.2);
+	    border-radius:2px;
+	    border:0 solid black;
+	    font-family:Trebuchet MS, Helvetica, sans-serif;
+	    font-weight:100;
+	    overflow:hidden;
+	  }
+	  .card-btn{
+	    background-color:white;
+	    width:300px;
+	    height:250px;
+	    margin-bottom:30px;
+	    padding:50px 5px 20px 5px;
+	    text-align:center;
+	    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.2);
+	    border-radius:2px;
+	    border:0 solid black;
+	    transition:all 0.5s ease;
+	    font-family:Trebuchet MS, Helvetica, sans-serif;
+	    font-weight:100;
+	    overflow:hidden;
+	  }
+	  .card:hover{
+	    margin-top:-5px;
+	    box-shadow:0 20px 30px 0 rgba(0, 0, 0, 0.2);
+	  }
+	  .card-title{
+	    display:block;
+	    text-align:center;
+	    justify-content:center;
+	    font-size:2.4rem;
+	    font-weight:300;
+	    font-family:Trebuchet MS, Helvetica, sans-serif;
+	    margin-bottom:20px;
+	  }
+	  .card-desc{
+	    text-align:center;
+	    font-family:Trebuchet MS, Helvetica, sans-serif;
+	    font-size:1.3rem;
+	    line-height:26px;
+	  }
+	  #bodysection{
+	    background-repeat:repeat;
+	    background-position:left top;
+	    background-attachment:scroll;
+	    background-size:auto;
+	    background-image:linear-gradient(to right, #8c52ff 0%, #5ce1e6 100%);
+	    padding:2% 0px 100px 0px;
+	  }
+	  #findus-card{
+	    color:#ffffff;
+	    background-color:#ff9256;
+	  }
+	  #shop-card{
+	    color:#638035;
+	    background-color:#d1c1ef;
+	  }
+	  #fb-card{
+	    color:#638035;
+	    background-color:#bfdf8c;
+	  }
+	  #email-card{
+	    color:#638035;
+	    background-color:#d1c1ef;
+	  }
+	  #email-card-desc{
+	    font-size:1.2rem;
+	  }
+	  #phone-card{
+	    color:#638035;
+	    background-color:#bfdf8c;
+	  }
+	  #igram-card{
+	    color:#ffffff;
+	    background-color:#ff9256;
+	  }
+	  .gjs-row{
+	    display:flex;
+	    justify-content:flex-start;
+	    align-items:stretch;
+	    flex-wrap:nowrap;
+	    padding:10px;
+	  }
+	  .gjs-cell{
+	    min-height:75px;
+	    flex-grow:1;
+	    flex-basis:100%;
+	  }
+	  #ip5bk{
+	    margin:20% 0px 0 0px;
+	    font-family:Times New Roman, Times, serif;
+	    font-size:3rem;
+	    color:#ffffff;
+	    float:left;
+	    width:80%;
+	  }
+	  #banner-left{
+	    padding:0px 0px 0px 0;
+	    flex-basis:100%;
+	  }
+	  #ilb9v{
+	    display:flex;
+	    width:95%;
+	    min-height:75px;
+	    max-width:600px;
+	    float:right;
+	  }
+	  #ify62{
+	    margin:4% 0px 4% 0px;
+	    font-family:Times New Roman, Times, serif;
+	    font-size:6rem;
+	    color:#ffffff;
+	    float:right;
+	    width:5px;
+	    position:relative;
+	    display:block;
+	    background-repeat:repeat;
+	    background-position:left top;
+	    background-attachment:scroll;
+	    background-size:auto;
+	    background-image:linear-gradient(#ffffff 0%, #ffffff 100%);
+	    padding:5px 2px 5px 2px;
+	  }
+	  @media (max-width: 992px){
+	    #banner-left{
+	      min-height:100px;
+	    }
+	    #ip5bk{
+	      width:90%;
+	      font-size:2.5rem;
+	    }
+	  }
+	  @media (max-width: 768px){
+	  }
+	  @media (max-width: 680px){
+	    .gjs-row{
+	      flex-wrap:wrap;
+	    }
+	    #ify62{
+	      display:none;
+	    }
+	    #ip5bk{
+	      width:100%;
+	      font-size:2rem;
+	      margin:10% 0px 0px 0px;
+	    }
+	  }
+	</style>
+  </head>
 <body>
   <section id="bodysection" class="flex-sect">
     <div class="container-width">
@@ -14,7 +215,7 @@
         </div>
       </div>
       <div id="cards-div" class="cards">
-		<a href="https://maps.app.goo.gl/u9JfTdAGKpDcnokR6" target="_blank">
+	<a href="https://maps.app.goo.gl/u9JfTdAGKpDcnokR6" target="_blank">
           <div id="findus-card" class="card-btn">
             <div id="fundus-title" class="card-title">find us
             </div>
@@ -23,7 +224,7 @@
               <br/>S4V 2Y7
             </div>
           </div>
-		</a>
+	</a>
         <div id="shop-card" class="card">
           <div id="shop-title" class="card-title">shop us
           </div>
@@ -32,7 +233,7 @@
             <br/>explore
           </div>
         </div>
-		<a href="https://www.facebook.com/people/Hallmark-Regina/100089058435779/" target="_blank">
+	<a href="https://www.facebook.com/people/Hallmark-Regina/100089058435779/" target="_blank">
           <div id="fb-card" class="card-btn">
             <div id="fb-title" class="card-title">facebook us
             </div>
@@ -40,227 +241,33 @@
               <br/>hallmarkregina
             </div>
           </div>
-		</a>
-		<a href="mailto:hallmarkreginaeast@sasktel.net" target="_blank">
-          <div id="email-card" class="card-btn">
-            <div id="iphy2" class="card-title">e-mail us
-            </div>
-            <div id="email-card-desc" class="card-desc">hallmarkreginaeast@sasktel.net
-            </div>
-          </div>
-		</a>
-		<a href="tel:+13063591911" target="_blank">
-          <div id="phone-card" class="card-btn">
-            <div id="ilxfg" class="card-title">phone us
-            </div>
-            <div id="is1kh" class="card-desc">306-359-1911
-            </div>
-          </div>
-		</a>
-		<a href="https://www.instagram.com/hallmarkreginaeast/" target="_blank">
-          <div id="igram-card" class="card-btn">
-            <div id="i4311" class="card-title">instagram us
-            </div>
-            <div id="idhhq" class="card-desc">@hallmarkreginaeast
-            </div>
-          </div>
-		</a>
+	</a>
+	<a href="mailto:hallmarkreginaeast@sasktel.net" target="_blank">
+	  <div id="email-card" class="card-btn">
+	    <div id="iphy2" class="card-title">e-mail us
+	    </div>
+	    <div id="email-card-desc" class="card-desc">hallmarkreginaeast@sasktel.net
+	    </div>
+	  </div>
+	</a>
+	<a href="tel:+13063591911" target="_blank">
+	  <div id="phone-card" class="card-btn">
+	    <div id="ilxfg" class="card-title">phone us
+	    </div>
+	    <div id="is1kh" class="card-desc">306-359-1911
+	    </div>
+	  </div>
+	</a>
+	<a href="https://www.instagram.com/hallmarkreginaeast/" target="_blank">
+	  <div id="igram-card" class="card-btn">
+	    <div id="i4311" class="card-title">instagram us
+	    </div>
+	    <div id="idhhq" class="card-desc">@hallmarkreginaeast
+	    </div>
+	  </div>
+	</a>
       </div>
     </div>
   </section>
 </body>
-<style>* {
-  box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-  }
-  *{
-    box-sizing:border-box;
-  }
-  body{
-    margin:0;
-  }
-  a {
-    color: unset;
-    background-color: unset;
-    text-decoration: none;
-  }
-  .container-width{
-    width:90%;
-    max-width:1150px;
-    margin:0 auto;
-  }
-  .flex-sect{
-    background-color:#fafafa;
-    padding:100px 0;
-    font-family:Helvetica, serif;
-  }
-  .flex-desc{
-    margin-bottom:55px;
-    font-size:1em;
-    color:rgba(0, 0, 0, 0.5);
-    text-align:center;
-    padding:5px;
-  }
-  .cards{
-    padding:20px 0;
-    display:flex;
-    justify-content:space-around;
-    flex-flow:wrap;
-  }
-  .card{
-    background-color:white;
-    width:300px;
-    height:250px;
-    margin-bottom:30px;
-    padding:50px 5px 20px 5px;
-    text-align:center;
-    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    border-radius:2px;
-    border:0 solid black;
-    font-family:Trebuchet MS, Helvetica, sans-serif;
-    font-weight:100;
-    overflow:hidden;
-  }
-  .card-btn{
-    background-color:white;
-    width:300px;
-    height:250px;
-    margin-bottom:30px;
-    padding:50px 5px 20px 5px;
-    text-align:center;
-    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.2);
-    border-radius:2px;
-    border:0 solid black;
-    transition:all 0.5s ease;
-    font-family:Trebuchet MS, Helvetica, sans-serif;
-    font-weight:100;
-    overflow:hidden;
-  }
-  .card:hover{
-    margin-top:-5px;
-    box-shadow:0 20px 30px 0 rgba(0, 0, 0, 0.2);
-  }
-  .card-title{
-    display:block;
-    text-align:center;
-    justify-content:center;
-    font-size:2.4rem;
-    font-weight:300;
-    font-family:Trebuchet MS, Helvetica, sans-serif;
-    margin-bottom:20px;
-  }
-  .card-desc{
-    text-align:center;
-    font-family:Trebuchet MS, Helvetica, sans-serif;
-    font-size:1.3rem;
-    line-height:26px;
-  }
-  #bodysection{
-    background-repeat:repeat;
-    background-position:left top;
-    background-attachment:scroll;
-    background-size:auto;
-    background-image:linear-gradient(to right, #8c52ff 0%, #5ce1e6 100%);
-    padding:2% 0px 100px 0px;
-  }
-  #findus-card{
-    color:#ffffff;
-    background-color:#ff9256;
-  }
-  #shop-card{
-    color:#638035;
-    background-color:#d1c1ef;
-  }
-  #fb-card{
-    color:#638035;
-    background-color:#bfdf8c;
-  }
-  #email-card{
-    color:#638035;
-    background-color:#d1c1ef;
-  }
-  #email-card-desc{
-    font-size:1.2rem;
-  }
-  #phone-card{
-    color:#638035;
-    background-color:#bfdf8c;
-  }
-  #igram-card{
-    color:#ffffff;
-    background-color:#ff9256;
-  }
-  .gjs-row{
-    display:flex;
-    justify-content:flex-start;
-    align-items:stretch;
-    flex-wrap:nowrap;
-    padding:10px;
-  }
-  .gjs-cell{
-    min-height:75px;
-    flex-grow:1;
-    flex-basis:100%;
-  }
-  #ip5bk{
-    margin:20% 0px 0 0px;
-    font-family:Times New Roman, Times, serif;
-    font-size:3rem;
-    color:#ffffff;
-    float:left;
-    width:80%;
-  }
-  #banner-left{
-    padding:0px 0px 0px 0;
-    flex-basis:100%;
-  }
-  #ilb9v{
-    display:flex;
-    width:95%;
-    min-height:75px;
-    max-width:600px;
-    float:right;
-  }
-  #ify62{
-    margin:4% 0px 4% 0px;
-    font-family:Times New Roman, Times, serif;
-    font-size:6rem;
-    color:#ffffff;
-    float:right;
-    width:5px;
-    position:relative;
-    display:block;
-    background-repeat:repeat;
-    background-position:left top;
-    background-attachment:scroll;
-    background-size:auto;
-    background-image:linear-gradient(#ffffff 0%, #ffffff 100%);
-    padding:5px 2px 5px 2px;
-  }
-  @media (max-width: 992px){
-    #banner-left{
-      min-height:100px;
-    }
-    #ip5bk{
-      width:90%;
-      font-size:2.5rem;
-    }
-  }
-  @media (max-width: 768px){
-  }
-  @media (max-width: 680px){
-    .gjs-row{
-      flex-wrap:wrap;
-    }
-    #ify62{
-      display:none;
-    }
-    #ip5bk{
-      width:100%;
-      font-size:2rem;
-      margin:10% 0px 0px 0px;
-    }
-  }
-</style>
+</html>
